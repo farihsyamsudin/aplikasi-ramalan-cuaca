@@ -1,0 +1,7 @@
+{
+  "name": "contoh_uas",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}

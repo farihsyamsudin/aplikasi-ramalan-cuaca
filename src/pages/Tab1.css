@@ -1,0 +1,30 @@
+.container-search-bar{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    min-height: var(--height-modif);
+    flex-direction: column;
+}
+
+.search-bar{
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.heading-judul-aplikasi{
+    margin-bottom: 20px;
+}
+
+.search-button{
+    margin-top : 5px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #3880ff;
+    color: white
+}
+
+.hidden{
+    display: none;
+}

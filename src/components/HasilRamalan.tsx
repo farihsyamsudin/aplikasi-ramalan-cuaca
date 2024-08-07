@@ -1,10 +1,13 @@
-import { IonButton } from "@ionic/react"
+import { IonButton, RefresherEventDetail, } from "@ionic/react"
 import { getCurrentDate } from "../lib/constant"
-import { Link } from "react-router-dom"
 
 const HasilRamalan = ({ data }) => {
 
     console.log(data)
+
+    function handleRefresh(e) {
+        window.location.reload()
+    }
 
     return (
       <div style={{'padding' : '0 15px 0 15px'}}>
@@ -51,7 +54,7 @@ const HasilRamalan = ({ data }) => {
           </div>
 
 
-          <Link to="/tab1"> <IonButton style={{'width' : '100%', 'display' : 'block', 'marginTop' : '20px'}}>Cari Wilayah Lain</IonButton> </Link>
+          <IonButton onClick={handleRefresh} style={{'width' : '100%', 'display' : 'block', 'marginTop' : '20px'}}>Cari Wilayah Lain</IonButton>
 
         </div>
 
